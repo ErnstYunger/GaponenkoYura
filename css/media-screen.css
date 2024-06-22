@@ -1,0 +1,69 @@
+@media screen and (min-width: 841px) and (max-width: 1240px) {
+	#main-page-main-block {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	#tools-layout {
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 840px) {
+
+	#body-div {
+		gap: 24px;
+		width: 100%;
+	}
+	
+
+	#main-page-main-block {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	#layout-MainTitle-bio {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	#contacts {
+		gap: 8px;
+	}
+
+	#tools-layout {
+		flex-direction: row;
+	}
+
+	.case-item {
+		flex-direction: column;
+		gap: 0px;
+	}
+
+	.case-img-div {
+		padding: 0px 24px 0px 24px;
+		width: fit-content;
+	}
+
+	#book-inst-block {
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	#book-item {
+		width: 80px;
+	}
+
+	.inst-item {
+		width: 80px;
+	}
+
+	.btn--mobile-full-width {
+		width: 100%;
+	}
+
+	#footer-contacts-cv {
+		flex-direction: column;
+		gap: 24px;
+	}
+}
