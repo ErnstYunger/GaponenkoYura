@@ -46,13 +46,14 @@ a {
 	font-size: 16px;
 	font-weight: 400;
 
+	transition: color 0.24s ease;
 }
 
 
 .sm-uppercase-r {
 	font-family: Dm sans, Inter;
 	font-weight: 400;
-	font-size: 12;
+	font-size: 12px;
 	font-height: 136%;
 	letter-spacing: 1px;
 
@@ -89,6 +90,12 @@ a {
 }
 
 
+/* typography states */
+
+.txt-hover {
+	color: inherit;
+}
+
 /* states */
 
 a:hover {
@@ -116,7 +123,14 @@ a:disabled {
 
 .hover-scale-up-rotate:hover{
 	transform: scale(1.1) rotate(4deg);
+}
 
+.case-item:hover .case-img-div {
+	transform: scale(1.02);
+}
+
+.case-item:hover .txt-hover {
+	color: #3D3C51;
 }
 
 /* flexbox */
@@ -352,10 +366,13 @@ a:disabled {
 
     display: inline-flex;
     justify-content: center;
+    align-items: center;
 
     font-family: DM Sans, Inter;
     font-size: 16px;
     font-weight: 400;
+
+    transition: background-color 0.24s ease, color 0.24s ease;
 }
 
 .btn--mobile-full-width {
@@ -396,10 +413,13 @@ a:disabled {
 
     display: inline-flex;
     justify-content: center;
+    align-items: center;
 
     font-family: DM Sans, Inter;
     font-size: 16px;
     font-weight: 400;
+
+    transition: background-color 0.24s ease, color 0.24s ease;
 }
 
 .btn-secondary:hover {
@@ -534,7 +554,7 @@ a:disabled {
 	width: 100%;
 }
 
-#case-content {
+.case-content {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -542,7 +562,7 @@ a:disabled {
 	padding: 24px;
 }
 
-#case-title {
+.case-title {
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
@@ -558,13 +578,6 @@ a:disabled {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 24px;
-}
-
-#book-item {
-	width: 84px;
-	height: fit-content;
-
-	border-radius: 4px;
 }
 
 #books-block {
@@ -634,6 +647,11 @@ a:disabled {
 .case-img-div {
 	padding: 40px 40px 0px 40px;
 	width: 180%;
+
+	display: flex;
+	justify-items:b ;
+
+	transition: transform 0.24s ease;
 }
 
 .case-img {
@@ -655,6 +673,8 @@ a:disabled {
 	outline-style: solid;
 	outline-color: #EBEBEB;
 	border-radius: 16px;
+
+	overflow: hidden;
 }
 
 .icon-title-32 {
@@ -669,11 +689,21 @@ a:disabled {
 	border-radius: 8px;
 	width: 84px;
 	height: fit-content;
+
+	transition: transform 0.24s ease;
 }
 
 .avatar {
 	border-radius: 999px;
 	width: 64px;
+}
+
+.book-item {
+	width: 84px;
+	height: fit-content;
+
+	border-radius: 4px;
+	transition: transform 0.24s ease;
 }
 
 /* General */
@@ -683,5 +713,3 @@ a:disabled {
     padding: 0;
     box-sizing: border-box;
 }
-
-
